@@ -4,13 +4,15 @@ Cryptocurrency Orders Monitor
 
 ![cryptom screenshot](docs/assets/cryptom_screenshot.png)
 
-## Supported exchanges / systems
+## Requirements
 
-Currently only [Kraken exchange](https://www.kraken.com) on the OSX operating system is supported.
+* OSX
+* [Kraken exchange](https://www.kraken.com) account
+* homebrew (or you can manually download from releases page)
 
 ## Setup
 
-You first need to create an API key that allows querying open/closed
+You need to create an API key that allows querying open/closed
 orders. In order to do this go to  your
 [Kraken API page](https://www.kraken.com/u/settings/api) and
 `Generate New Key` with the `Query Open Orders & Trades` permission.
@@ -25,12 +27,21 @@ echo kraken-key=\"KEY\" >> ~/.cryptom.toml
 echo kraken-secret=\"SECRET\" >> ~/.cryptom.toml
 ```
 
-Now run cryptom:
+Now install and run:
 
 ```bash
-# run in foreground
-./cryptom
+# install via homebrew
+brew install andreiashu/cryptom/cryptom
 
-# or you can send it to background
-./cryptom &
+# alternatively you can also download from the releases page:
+# https://github.com/andreiashu/cryptom/releases
+
+# run cryptom (in foreground)
+$ cryptom
+Listening for order updates...
+
+# or you can run and send it to background
+$ cryptom &
+[1] 78130
+Listening for order updates...
 ```
