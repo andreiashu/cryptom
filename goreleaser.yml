@@ -11,7 +11,7 @@ brew:
   # Reporitory to push the tap to.
   github:
     owner: andreiashu
-    name: cryptom-tap
+    name: homebrew-cryptom
 
   # Folder inside the repository to put the formula.
   # Default is the root folder.
