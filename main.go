@@ -21,6 +21,7 @@ const KRAKEN_LINK = "https://www.kraken.com/login"
 const POLL_INTERVAL = 8
 
 func main() {
+	fmt.Printf("Listening for order updates...\n")
 	// config setup
 	viper.SetConfigType("toml")
 	viper.SetConfigName(".cryptom") // name of config file (without extension)
