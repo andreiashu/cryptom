@@ -44,4 +44,8 @@ Listening for order updates...
 $ cryptom &
 [1] 78130
 Listening for order updates...
+
+# if you have any active orders you should now see a notification
+# when orders finish (or get cancelled) or when you place new
+orders cryptom will show you a notification
 ```
