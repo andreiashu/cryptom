@@ -2,9 +2,11 @@
 
 Cryptocurrency Orders Monitor
 
+![cryptom screenshot](docs/assets/cryptom_screenshot.png)
+
 ## Supported exchanges / systems
 
-Currently only Kraken exchange on the OSX operating system is supported.
+Currently only [Kraken exchange](https://www.kraken.com) on the OSX operating system is supported.
 
 ## Setup
 
